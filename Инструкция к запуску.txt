@@ -1,0 +1,32 @@
+В терминале (bash) 
+
+refresh
+npm install
+
+
+Т.к запускаю в Glitch
+Glitch работает с Node.js, но для Python-тестов нужно настроить Python:
+
+apt update
+apt install -y python3 python3-pip
+
+      *Примечание: Это может не сработать в Glitch из-за ограничений. Если выдаёт ошибку, переходите к варианту ниже.*
+
+      Альтернатива: Используйте PythonAnywhere
+                      Поскольку Glitch не поддерживает Python напрямую, лучше использовать PythonAnywhere:
+
+                      Перехожу на pythonanywhere.com → создайю аккаунт.
+                      В Files создаю папку test_google_search → загрузите test_google.py и test_form.py через "Upload a file".
+                          
+                                    
+                                          Создаю requirements.txt
+                                                selenium==4.17.2
+                                                pytest==8.0.0
+                      В Consoles → Bash
+                                          cd /home/mono1eet/test_google_search
+                                          pip3.10 install --user -r requirements.txt
+
+
+
+                      Запуск теста.
+                                          python3.10 -m pytest
