@@ -1,0 +1,16 @@
+{
+  "name": "qa-portfolio-tests",
+  "version": "1.0.0",
+  "main": "test_google.py",
+  "dependencies": {
+    "selenium-webdriver": "^4.17.0",
+    "pytest": "^8.0.0",
+    "chromedriver": "^122.0.0"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "test": "pytest"
+  }
+}
